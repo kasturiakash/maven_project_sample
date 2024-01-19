@@ -15,7 +15,15 @@
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
-
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>latest_version</version>
+        </plugin>
+    </plugins>
+  </build>
   <modules>
     <module>server</module>
     <module>webapp</module>
